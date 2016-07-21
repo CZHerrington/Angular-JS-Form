@@ -15,32 +15,32 @@
       <form name="InpForm" class="contact-form" ng-submit="addForm(form)">
               <p class="control">
                 <input type="text" placeholder="Johnny Appleseed" class="input" ng-model="form.name" name="InpName" required>
-                <div class="alert" ng-show="InpForm.$submitted || InpForm.InpName.$touched">
+                <span class="alert" ng-show="InpForm.$submitted || InpForm.InpName.$touched">
                     <span ng-show="InpForm.InpName.$error.required">This is a required field.</span>
-                </div>
+                </span>
               </p>
 
               <p class="control">
                 <input type="email" placeholder="email@example.com" class="input" ng-model="form.email" name="InpEmail" required>
-                <div class="alert" ng-show="InpForm.$submitted || InpForm.InpEmail.$touched">
+                <span class="alert" ng-show="InpForm.$submitted || InpForm.InpEmail.$touched">
                     <span ng-show="InpForm.InpEmail.$error.required">This is a required field.</span>
                     <span ng-show="InpForm.InpEmail.$error.email">This is not a valid email.</span>
-              </div>
+              </span>
               </p>
 
               <p class="control">
                 <input type="url" placeholder="http://www.example.com" class="input" ng-model="form.url" name="InpUrl" required>
-                <div class="alert" ng-show="InpForm.$submitted || InpForm.InpUrl.$touched">
+                <span class="alert" ng-show="InpForm.$submitted || InpForm.InpUrl.$touched">
                     <span ng-show="InpForm.InpUrl.$error.required">This is a required field.</span>
                     <span ng-show="InpForm.InpUrl.$error.url">This is not a valid URL.</span>
-              </div>
+              </span>
               </p>
 
               <p class="control">
                 <textarea type="comment" placeholder="comment" class="input" ng-model="form.comment" name="InpComment" required></textarea>
-                <div class="alert" ng-show="InpForm.$submitted">
+                <span class="alert" ng-show="InpForm.$submitted || InpForm.InpComment.$touched">
                     <span ng-show="InpForm.InpComment.$error.required">This is a required field.</span>
-              </div>
+              </span>
               </p>
 
               <p class="control">
