@@ -6,7 +6,6 @@ function FormController ($scope, SERVER, $http) {
 
   function init () {
     console.log("%cController Initializing","color: blue;")
-    $scope.text = ">>CONTROLLER LINKED"
   };
 
 $scope.addForm = function (form) {
