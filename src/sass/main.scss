@@ -1,0 +1,49 @@
+@import "bulma";
+html{
+background-color: #0e1717;
+}
+
+.container {
+  width: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 35px;
+  padding-top: 50px;
+  background-color: white;
+
+  h3{
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
+
+.alert {
+  display: inline;
+}
+
+.input {
+  margin-bottom: 15px;
+  height: 34px;
+}
+
+.contact-form input.ng-invalid.ng-touched {
+  border-color: #FA787E;
+}
+
+.contact-form input.ng-valid.ng-touched {
+  border-color: #78FA89;
+}
+
+.textarea {
+  height: 1000px;
+}
+
+.button {
+  background-color: #88C470;
+
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  height: 60px;
+  width: 120px;
+}
